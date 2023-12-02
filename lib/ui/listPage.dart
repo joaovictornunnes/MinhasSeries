@@ -59,7 +59,7 @@ class _ListBodyState extends State<ListBody> {
     );
   }
 }
-
+//Questão 8: onlongpress
 class ListItem extends StatelessWidget {
   final Serie serie;
   const ListItem({super.key, required this.serie});

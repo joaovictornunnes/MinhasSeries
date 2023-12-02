@@ -3,7 +3,7 @@ import 'package:segunda_prova_app/domain/serie.dart';
 import 'package:segunda_prova_app/helpers/serie_helper.dart';
 
 import 'telaSobre.dart';
-
+//questão 3: criar tela de detalhes
 class TelaDetalhe extends StatefulWidget {
   const TelaDetalhe({Key? key, required this.id}) : super(key: key);
   final int id;
@@ -21,12 +21,12 @@ class _TelaDetalheState extends State<TelaDetalhe> {
     super.initState();
     _loadSerie();
   }
-
+  //3
   Future<void> _loadSerie() async {
     _serie = await seridHelper.getSerie(widget.id);
     setState(() {});
   }
-
+//questão 7: tela detalhe
   @override
   Widget build(BuildContext context) {
     return Scaffold(

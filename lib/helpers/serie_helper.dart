@@ -5,7 +5,7 @@ import 'package:sqflite/sqflite.dart';
 class SerieHelper{
   static final SerieHelper _instance = SerieHelper.internal();
     
-  //criação do factory para retornar a instância
+  //questão 2 criar banco
 
   factory SerieHelper() => _instance;
 

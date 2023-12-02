@@ -5,7 +5,7 @@ import 'package:segunda_prova_app/widgets/custom_form_field.dart';
 import 'package:segunda_prova_app/widgets/custom_rating_bar.dart';
 
 import 'telaSobre.dart';
-
+//questão 6: criar tela detalhe.
 class TelaAltera extends StatefulWidget {
   const TelaAltera({Key? key, required this.id}) : super(key: key);
   final int id;

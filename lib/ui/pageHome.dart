@@ -1,9 +1,8 @@
-// ignore_for_file: unnecessary_null_comparison
-
 import 'package:flutter/material.dart';
 import 'package:segunda_prova_app/ui/telaDetalhe.dart';
 import 'cadastroPage.dart';
 import 'listPage.dart';
+import 'telaAltera.dart';
 import 'telaSobre.dart';
 
 // ignore: must_be_immutable
@@ -23,7 +22,7 @@ class HomePage extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.background,
     );
   }
-
+//questão 4; criar o floatingactionbutton
   // ignore: non_constant_identifier_names
   Widget HomeBody(BuildContext context) {
     return Center(
@@ -32,6 +31,7 @@ class HomePage extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(8),
+            //FloatingActionButton
             child: FloatingActionButton(
               child: const Icon(Icons.add),
               onPressed: () => Navigator.push(
@@ -54,11 +54,12 @@ class HomePage extends StatelessWidget {
                   controller: idController,
                 ),
                 TextButton(
+                  // ignore: unnecessary_null_comparison
                   onPressed: idController != null
                       ? () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => TelaDetalhe(
+                              builder: (context) => TelaAltera(
                                 id: int.parse(idController.text),
                               ),
                             ),

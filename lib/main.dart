@@ -4,7 +4,7 @@ import 'package:segunda_prova_app/ui/pageHome.dart';
 void main() {
   runApp(const MyApp());
 }
-
+//Questão 1: criação do projeto
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

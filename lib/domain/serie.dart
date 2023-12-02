@@ -1,5 +1,5 @@
 class Serie{
-
+//questão 2: criar classe
   static const String serieTable = "serie_table";
   static const String idColumn = "id";
   static const String nameColumn = "name";
