@@ -15,13 +15,17 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 180, 34, 196)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 193, 149, 213),
+        ).copyWith(
+          onPrimary: Colors.white,
+          onSecondary: Colors.white,
+        ),
         useMaterial3: true,
         textTheme: TextTheme(
           displayLarge: TextStyle(
             fontSize: 48,
             fontWeight: FontWeight.w300,
-            color: Theme.of(context).colorScheme.onSurface,
+            color: Theme.of(context).colorScheme.onPrimary,
           ),
           labelLarge: TextStyle(
             fontSize: 22,

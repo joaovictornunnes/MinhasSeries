@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.secondary,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         title: const Text("Minhas Séries"),
       ),
       body: HomeBody(context),
@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
                           )
                       : null,
                   style: TextButton.styleFrom(
-                      backgroundColor: Theme.of(context).colorScheme.primary,
+                      backgroundColor: Theme.of(context).colorScheme.inversePrimary,
                       minimumSize: const Size(150, 50)),
                   child: const Text("Alterar dados da Série"),
                 ),
@@ -78,13 +78,13 @@ class HomePage extends StatelessWidget {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ListPage(),
+                  builder: (context) => const ListPage(),
                 ),
               ),
               style: TextButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.primary,
-                  minimumSize: const Size(150, 50)),
-              child: const Text("Catálogo das Séries"),
+                backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+                minimumSize: const Size(150, 50)),
+              child: const Text("Catálogo das Séries")
             ),
           ),
           AppBar(
